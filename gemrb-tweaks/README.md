@@ -11,7 +11,7 @@ Current components:
 - All mage schools available to gnomes
 
 TODO: 
-- add more tweaks from http://www.gemrb.org/wiki/doku.php?id=developers:mods
+- add more tweaks from https://gemrb.org/Modding.html#mod-ideas
 - add strings and mod modal.2da for iwd1 and bg1: https://github.com/gemrb/gemrb/issues/261
 
 
@@ -47,13 +47,11 @@ In the originals, they were restricted to illusionists.
 
 ## Installation
 
-**As of WeiDU version newer than 246, you can install this mod like any other.**
+**As of WeiDU version 247, you can install this mod like any other.**
 Make sure to run GemRB at least once on this install, so WeiDU will know
 where to look for files.
 
-Otherwise, check where you installed GemRB (data) and mark it down.
-
-Run WeiDU as (substituting with the real path; USE THE CORRECT dir for your GAME):
+Run WeiDU from the game dir:
 ```
-   weidu --search /path/to/gemrbs/datadir/unhardcoded/bg2/ gemrb-tweaks/gemrb-tweaks.tp2
+   weidu gemrb-tweaks/gemrb-tweaks.tp2
 ```
