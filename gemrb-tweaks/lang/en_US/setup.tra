@@ -11,3 +11,4 @@
 @400 = ~TobEx-like concentration checks~
 @500 = ~Do not restrict Gnome mages to the Illusionist school~
 @501 = ~This component is only relevant for IWD1, BG1 and BG2~
+@600 = ~Skip loading screens - example python mod~

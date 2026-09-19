@@ -1,6 +1,6 @@
 BACKUP "gemrb-tweaks/backup/gemrb-tweaks"
 SUPPORT "www.github.com/lynxlynxlynx/gemrb-mods/issues/new"
-VERSION v0.1.1
+VERSION v0.2.0
 
 LANGUAGE
   English
@@ -65,3 +65,7 @@ REQUIRE_PREDICATE GAME_IS ~bg1 totsc bg2 tob iwd how totlm~ @501
   SET_2DA_ENTRY 13 15 15 ~1~
   SET_2DA_ENTRY 17 15 15 ~1~
   SET_2DA_ENTRY 18 15 15 ~1~
+
+BEGIN @600 DESIGNATED 600 // Skip loading screens - example python mod
+  MKDIR ~python~
+  COPY ~gemrb-tweaks/python/LoadScreen.py~ ~python~
