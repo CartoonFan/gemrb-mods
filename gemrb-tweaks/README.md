@@ -9,6 +9,7 @@ Current components:
 - 10% bonus experience as per BG2, regardless of wisdom
 - Maximum HP on level up for BG1
 - All mage schools available to gnomes
+- Skip load screens
 
 TODO: 
 - add more tweaks from https://gemrb.org/Modding.html#mod-ideas
@@ -45,6 +46,15 @@ It was the only game without this setting or at least not nicely exposed.
 ### All mage schools available to gnomes
 In the originals, they were restricted to illusionists.
 
+### Skip load screens
+This is mainly an example mod to show how to override python files.
+In general what is needed for mods like that:
+- to provide a file of the same name as the one the engine uses
+- installing it to `python` in the game dir (which this component does)
+- if you're not starting with a copy of the original file, make sure to
+  provide or stub out the callbacks the engine uses (`SetLoadScreen` for example).
+  To find them, you can search the GemRB codebase for `RunFunction.*filename` —
+  for this component `RunFunction.*LoadScreen` shows two functions need to be defined.
 
 ## Installation
 
